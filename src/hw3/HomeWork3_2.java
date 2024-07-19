@@ -9,11 +9,11 @@ public class HomeWork3_2 {
 				int ans;
 				ans = (int) (Math.random() * 10);
 
-				Scanner num = new Scanner(System.in);
+				Scanner sum = new Scanner(System.in);
 				System.out.println("開始猜數字吧(範圍=0~9)：");
 				for (int x = 0; x != ans;) {
-					if (num.hasNextInt()) {
-						x = num.nextInt();
+					if (sum.hasNextInt()) {
+						x = sum.nextInt();
 					} else {
 						System.out.println("請輸入整數！");
 						break;
@@ -22,7 +22,7 @@ public class HomeWork3_2 {
 						System.out.println("答對了！答案就是" + ans);
 						break;
 					} else {
-						System.out.println("猜錯囉！");
+						System.out.println("猜錯了！");
 					}
 				}
 	}
