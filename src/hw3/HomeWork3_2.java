@@ -9,17 +9,17 @@ public class HomeWork3_2 {
 				int ans;
 				ans = (int) (Math.random() * 10);
 
-				Scanner sum = new Scanner(System.in);
-				System.out.println("開始猜數字吧(範圍=0~9)：");
+				Scanner result = new Scanner(System.in);
+				System.out.println("猜數字囉(0~9)：");
 				for (int x = 0; x != ans;) {
-					if (sum.hasNextInt()) {
-						x = sum.nextInt();
+					if (result.hasNextInt()) {
+						x = result.nextInt();
 					} else {
 						System.out.println("請輸入整數！");
 						break;
 					}
 					if (x == ans) {
-						System.out.println("答對了！答案就是" + ans);
+						System.out.println("答對了！答案是" + ans);
 						break;
 					} else {
 						System.out.println("猜錯了！");
